@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script src='Ejercicio3.js'>
+        </script>
+    </head>
+    <body>
+        <form name='Ejercicio3'>
+            <label>Lado A</label>
+            <input type="number" name="ladoA" value="0"/><br>
+            <label>Lado B</label>
+            <input type="number" name="ladoB" value="0"/><br>
+            <label>Lado C</label>
+            <input type="number" name="ladoC" value="0"/><br>
+            <label>Angulo AB</label>
+            <input type="number" name="anguloAB" value="0"/><br>
+            <label>Angulo BC</label>
+            <input type="number" name="anguloBC" value="0"/><br>
+            <label>Angulo AC</label>
+            <input type="number" name="anguloAC" value="0"/><br>
+            <input type="button" value="Comprobar triangulo" onclick="comprobarTriangulo(ladoA.value,ladoB.value,
+            ladoC.value,parseInt(anguloAB.value),parseInt(anguloAC.value),parseInt(anguloBC.value))"/>
+        </form>
+    </body>
+</html>
