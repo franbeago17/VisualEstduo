@@ -3,7 +3,11 @@ var factura = {
     direccion : "hehe",
     telefono : "12312342",
     nif : "12312313G",
-    formaPago : "asfdascdx"
+    formaPago : "asfdascdx",
+    impTotal : ()=>{
+        var total=producto.precio*producto.cantidad;
+        return total;
+    }
 };
 
 var cliente = {
@@ -19,10 +23,6 @@ var cliente = {
 var producto = {
     descProducto : "asdadvfvssvd asdcasd asecasca ",
     precio : 5,
-    cantidad : 5,
-    impTotal : ()=>{
-        var total=producto.precio*producto.cantidad;
-        return total;
-    }
+    cantidad : 8
 };
-alert("La cantidad a pagar es: " + producto.impTotal());
+alert("La cantidad a pagar es: " + factura.impTotal());
