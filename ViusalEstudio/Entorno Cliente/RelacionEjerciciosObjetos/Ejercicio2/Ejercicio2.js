@@ -28,7 +28,7 @@ class Producto {
 };
 
 class Factura {
-    constructor(Empresa, Cliente, impTotal, formaPago) {
+    constructor(impTotal, formaPago) {
         this.Empresa = empresa;
         this.Cliente = cliente;
         this.impTotal = impTotal;
@@ -39,7 +39,15 @@ class Factura {
 var empresa = new Empresa("FBG.SL", "C/ Navas", "123456789", "19283746J");
 var cliente = new Cliente("124578", "13579320K", "Huanito", "C/ Mezquita", "12678", "El Charco", "Pantano");
 var arrayProd = [new Producto("Silla", "35", "4"), new Producto("Mesa", "63", "1"), new Producto("Cristal", "20", "2")];
-var factura = new Factura(empresa, cliente, "2", "Tarjeta");
+var factura = new Factura(empresa, cliente, impTotal, "Tarjeta");
+
+impTotal = () => {
+    arrayProd.forEach(elemento => {
+        var total = total + elemento.precio * elemento.cantidad;
+        return total;
+    });
+}
+
 
 function imprimir() {
     document.write("<h1>Factura</h1>" +
@@ -58,9 +66,13 @@ function imprimir() {
         "<u>Ciudad</u>: " + cliente.ciudad + "<br/>" +
         "<u>Provincia</u>: " + cliente.provincia);
 
-    function impTotal() {
+    document.write("<h2>Productos</h2>" +
         arrayProd.forEach(elemento => {
-            total = total + elemento.precio * elemento.cantidad
-        });
-    }
+            elemento.descripcion + "<br/>" +
+                "<u>Precio</u>: " + elemento.precio + "<br/>" +
+                "<u>Cantidad</u>: " + elemento.cantidad + "<br/>"
+        })
+    );
+
+    document.write("<h3>Total a pagar: " + factura.impTotal + "</h3>");
 }
