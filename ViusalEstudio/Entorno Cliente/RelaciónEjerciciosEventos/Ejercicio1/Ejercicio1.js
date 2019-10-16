@@ -1,8 +1,7 @@
-var parrafo1 = document.getElementById("p1");
-document.getElementById("p1").addEventListener('click', colorearRojo(parrafo1), true);
+document.getElementById("p1").addEventListener('click', colorearRojo(), true);
 document.getElementById("p2").addEventListener('click', colorearAzul(), true);
 document.getElementById("p3").addEventListener('click', colorearVerde(), true);
-function colorearRojo(parrafo1) {
+function colorearRojo() {
     document.getElementById("p1").style.color = "red";
 }
 function colorearAzul() {
