@@ -1,12 +1,40 @@
 h1 {
      font-family: 'Times New Roman', Times, serif;
      background-color: darkseagreen;
-     margin-bottom: 5%;
-     margin-top: 5%;
      }
 p {
     font-family: Arial, Helvetica, sans-serif;
 }
-#imgLuffy{
-    text-align: left;
+.curriculum{
+    font-size: 18px;
+    float: inline-end;
 }
+.vertical-menu {
+    width: 200px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color:#eee;
+  }
+  
+  .vertical-menu a {
+      font-size: 25px;
+    background-color:#eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none; 
+    display: flex;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: darkseagreen;
+  }
+  
+  .vertical-menu a.active {
+    background-color: rgb(11, 63, 13);
+    color: white;
+    display: flex;
+  }
+  
