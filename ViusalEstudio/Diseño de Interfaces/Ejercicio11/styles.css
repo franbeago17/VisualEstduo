@@ -1,0 +1,25 @@
+#cajacookies {
+    box-shadow: 0px 0px 5px 5px #808080;
+    background-color: rgba(134, 211, 246, 0.7);
+    color: black;
+    padding: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 0px;
+    position: fixed;
+    top: 0px;
+    width: 70%;
+    border-radius: 6px;
+
+  }
+  
+  #cajacookies button {
+    color: black;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+  }
+  #cajacookies button:hover {
+    background-color: #008CBA;
+    color: white;
+}
