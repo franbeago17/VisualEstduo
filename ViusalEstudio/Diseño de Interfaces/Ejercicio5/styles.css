@@ -1,7 +1,7 @@
 .principal{
     display: flex;
     border: 1px solid;
-    width: 40%;
+    width: 800px;
     max-width: 800px;
     flex-direction: column;
     font-size: 16px;
@@ -49,7 +49,7 @@
     background-color: rgb(141, 222, 135);
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 800px){
     .principal{
         width: 100%;
     }
