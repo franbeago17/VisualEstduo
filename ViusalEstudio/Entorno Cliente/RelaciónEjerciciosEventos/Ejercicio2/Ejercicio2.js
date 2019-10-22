@@ -11,11 +11,11 @@ function muestraOculta(parrafo, enlace, enlace2){
 }
 function aumentar(parrafo){
     var tamaño = parseInt(document.getElementById(parrafo).style.fontSize);
-    document.getElementById(parrafo).style.fontSize = tamaño+1;
+    document.getElementById(parrafo).style.fontSize = tamaño+2;
 }
 function disminuir(parrafo){
     var tamaño = parseInt(document.getElementById(parrafo).style.fontSize);
-    document.getElementById(parrafo).style.fontSize = tamaño-1;
+    document.getElementById(parrafo).style.fontSize = tamaño-2;
 }
 function defecto(parrafo){
     document.getElementById(parrafo).style.fontSize = 16;
