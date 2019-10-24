@@ -1,0 +1,23 @@
+.principal{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.row1{
+    border: 1px solid;
+    width: 30%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.row{
+    border: 1px solid;
+    width: 30%;
+    display: flex;
+}
+.col-sm-4{
+    border: 1px solid;
+    display: block;
+}
