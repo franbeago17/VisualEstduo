@@ -11,7 +11,7 @@
 <body>
     <h1>Centro Educativo I.E.S. Marqués de Comares.</h1>
     <h2>Matriculación en el ciclo de grado superior DAW</h2>
-    <form onsubmit="return canSend()">
+    <form name="forms" onsubmit="return canSend()">
         Apellidos: <input id="apellidos" type="text" placeholder=" Introduzca sus apellidos" /><br/>
         Nombre: <input id="nombre" type="text" placeholder=" Introduzca su nombre" /><br/><br/>
         Sexo: <select id="sexo">
@@ -19,9 +19,11 @@
             <option>Hombre</option>
             <option>Mujer</option>
         </select><br /><br />
+        <textarea id="texto" rows="10" cols="50" maxlength="50" placeholder=" Introduce aquí texto." onKeyPress="cuenta()" onKeyUp="cuenta()" onfocus="cuenta()"></textarea><br /><br />
+        <label id="caracteres"></label><br/><br/>
         <input type="submit" value="Enviar"/>
     </form>
-    <script src="Ejercicio1.js"></script>
+    <script src="Ejercicio2.js"></script>
 </body>
 
 </html>
