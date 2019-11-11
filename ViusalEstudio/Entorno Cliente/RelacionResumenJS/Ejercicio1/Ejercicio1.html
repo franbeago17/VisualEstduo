@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>BIENVENIDO AL SISTEMA COMARES</h1>
+    <p>Introduzca su usuario y clave...</p>
+    <form onsubmit="return canSend()">
+        Usuario: <input id="usuario" type="text" placeholder="Username" /><br/><br/>
+        Clave: <input id="clave" type="password" placeholder="Password" /><br/><br/>
+        <input type="submit" value="Enviar"/>
+        <input type="button" value="Limpiar" onclick="limpiar()"/>
+    </form>
+    <script src="Ejercicio1.js"></script>
+</body>
+
+</html>
