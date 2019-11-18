@@ -10,10 +10,15 @@
 
 <body>
     <form method="post" name="form">
-        Kgs: <input type="text" name="kgs"/>&nbsp;<input type="submit" name="peso" value="Convertir Peso"/>&nbsp;Gs:<input type="text" name="gs"/>
+        Kgs: <input type="text" id="kgs" onclick="desapareceGs()"/>&nbsp;
+        <input type="button" name="peso" value="Convertir Peso" onclick="convertirPeso()"/>&nbsp;
+        Gs:<input type="text" id="gs" onclick="desapareceKgs()"/>
         <hr/>
-        Kms: <input type="text" name="kms"/>&nbsp;<input type="submit" name="distancia" value="Convertir Distancia"/>&nbsp;Ms:<input type="text" name="ms"/>
+        Kms: <input type="text" id="kms" onclick="desapareceMs()"/>&nbsp;
+        <input type="button" name="distancia" value="Convertir Distancia" onclick="convertirDistancia()"/>&nbsp;
+        Ms:<input type="text" id="ms" onclick="desapareceKms()"/>
     </form>
+    <script src="Ejercicio8.js"></script>
 </body>
 
 </html>
