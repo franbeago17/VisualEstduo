@@ -28,12 +28,12 @@ function convertirDistancia(){
 
 function desapareceKgs(){
     if (document.getElementById("kgs").value.length != 0){
-        document.getElementById("Kgs").value = "";
+        document.getElementById("kgs").value = "";
     }
 }
 function desapareceKms(){
     if (document.getElementById("kms").value.length != 0){
-        document.getElementById("Kms").value = "";
+        document.getElementById("kms").value = "";
     }
 }
 function desapareceGs(){
