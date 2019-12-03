@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio 12</title>
     <style>
-        #form{
+        #form1 {
             float: left;
             margin-left: 10%;
         }
-        #form2{
+
+        #form2 {
             float: right;
             margin-right: 10%;
             margin-left: 10%;
         }
-        h1{
+
+        h1 {
             margin-left: 10%;
         }
     </style>
 </head>
+
 <body>
     <h1>Centro Educativo I.E.S. Marqués de Comares</h1>
-    <form action="" method="POST" id="form">
-        <h2>Matriculación en el ciclo  de grado superior DAW</h2>
-        Apellidos: <input type="text" id="apellidos" placeholder="Pon aquí tus apellidos"/>
-        Nombre: <input type="text" id="nombre" placeholder="Pon aquí tu nombre"/><br><br>
-        Domicilio: <input type="text" id="domicilio" placeholder="Pon aquí tu domicilio"/><br><br>
-        Sexo: <input type="radio" id="hombre"/>Hombre <input type="radio" id="mujer"/>Mujer<br><br>
-        Edad: <input type="number" id="edad"/ style="width: 45px;"><br><br>
-        Curso:  <select id="curso">
-                    <option>1º</option>
-                    <option>2º</option>
-                </select><br><br>
+    <form action="" method="POST" id="form1">
+        <h2>Matriculación en el ciclo de grado superior DAW</h2>
+        Apellidos: <input type="text" id="apellidos" name="apellidos" placeholder="Pon aquí tus apellidos" />
+        Nombre: <input type="text" id="nombre", name="nombre" placeholder="Pon aquí tu nombre" /><br><br>
+        Domicilio: <input type="text" id="domicilio" name="domicilio" placeholder="Pon aquí tu domicilio" /><br><br>
+        Sexo: <input type="radio" id="hombre" nombre="hombre" />Hombre <input type="radio" id="mujer" nombre="mujer"/>Mujer<br><br>
+        Edad: <input type="number" id="edad" nombre="edad" style="width: 45px;"/><br><br>
+        Curso: <select id="curso" name="curso">
+            <option>1º</option>
+            <option>2º</option>
+        </select><br><br>
         Módulos en los que se matricula:<br>
-        <input type="checkbox" id="ENT"/>Entornos de Desarrollo<br>
-        <input type="checkbox" id="BBDD"/>Bases de Datos<br>
-        <input type="checkbox" id="PRGR"/>Programación<br>
-        <input type="checkbox" id="ISO"/>Implantación de Sistemas Operativos<br>
-        <input type="checkbox" id="FOL"/>Formación y Orientación Laboral<br>
-        <input type="checkbox" id="DWC"/>Desarrollo Web en Entorno Cliente<br>
-        <input type="checkbox" id="DWS"/>Desarrollo Web en Entorno Servidor<br>
-        <input type="checkbox" id="DAW"/>Despliegue de Aplicaciones Web<br>
-        <input type="checkbox" id="DIW"/>Desarrollo de Interfaces Web<br>
-        <input type="checkbox" id="EIE"/>Empresa e Iniciativa Emprendedora<br>
+        <input type="checkbox" id="ENT" name="ENT" />Entornos de Desarrollo<br>
+        <input type="checkbox" id="BBDD" name="BBDD" />Bases de Datos<br>
+        <input type="checkbox" id="PRGR" name="PRGR" />Programación<br>
+        <input type="checkbox" id="ISO" name="ISO" />Implantación de Sistemas Operativos<br>
+        <input type="checkbox" id="FOL" name="FOL" />Formación y Orientación Laboral<br>
+        <input type="checkbox" id="DWC" name="DWC" />Desarrollo Web en Entorno Cliente<br>
+        <input type="checkbox" id="DWS" name="DWS" />Desarrollo Web en Entorno Servidor<br>
+        <input type="checkbox" id="DAW" name="DAW" />Despliegue de Aplicaciones Web<br>
+        <input type="checkbox" id="DIW" name="DIW" />Desarrollo de Interfaces Web<br>
+        <input type="checkbox" id="EIE" name="EIE" />Empresa e Iniciativa Emprendedora<br>
         Observaciones:<br>
-        <textarea cols="50" rows="10" id="observaciones" placeholder="Indique si tiene alguna observación"></textarea><br><br>
-        <input type="button" value="Enviar" id="enviar"/><input type="button" value="Restablecer" id="restablecer"/>
+        <textarea cols="50" rows="10" id="observaciones" name="observaciones"
+            placeholder="Indique si tiene alguna observación"></textarea><br><br>
+        <input type="button" value="Enviar" id="enviar" /><input type="button" value="Restablecer" id="restablecer" />
     </form>
     <form action="" method="POST" id="form2">
-            <h2>Matriculación en el ciclo  de grado medio SMR</h2>
-            Apellidos: <input type="text" id="apellidos2" placeholder="Pon aquí tus apellidos"/>
-            Nombre: <input type="text" id="nombre2" placeholder="Pon aquí tu nombre"/><br><br>
-            Domicilio: <input type="text" id="domicilio2" placeholder="Pon aquí tu domicilio"/><br><br>
-            Sexo: <input type="radio" id="hombre2"/>Hombre <input type="radio" id="mujer2"/>Mujer<br><br>
-            Edad: <input type="number" id="edad2"/ style="width: 45px;"><br><br>
-            Curso:  <select id="curso2">
-                        <option>1º</option>
-                        <option>2º</option>
-                    </select><br><br>
-            Módulos en los que se matricula:<br>
-            <input type="checkbox" id="ENT2"/>Entornos de Desarrollo<br>
-            <input type="checkbox" id="BBDD2"/>Bases de Datos<br>
-            <input type="checkbox" id="PRGR2"/>Programación<br>
-            <input type="checkbox" id="ISO2"/>Implantación de Sistemas Operativos<br>
-            <input type="checkbox" id="FOL2"/>Formación y Orientación Laboral<br>
-            <input type="checkbox" id="DWC2"/>Desarrollo Web en Entorno Cliente<br>
-            <input type="checkbox" id="DWS2"/>Desarrollo Web en Entorno Servidor<br>
-            <input type="checkbox" id="DAW2"/>Despliegue de Aplicaciones Web<br>
-            <input type="checkbox" id="DIW2"/>Desarrollo de Interfaces Web<br>
-            <input type="checkbox" id="EIE2"/>Empresa e Iniciativa Emprendedora<br>
-            Observaciones:<br>
-            <textarea cols="50" rows="10" id="observaciones2" placeholder="Indique si tiene alguna observación"></textarea><br><br>
-            <input type="button" value="Enviar" id="enviar2"/><input type="button" value="Restablecer" id="restablecer2"/>
-        </form> 
+        <h2>Matriculación en el ciclo de grado medio SMR</h2>
+        Apellidos: <input type="text" id="apellidos2" placeholder="Pon aquí tus apellidos" />
+        Nombre: <input type="text" id="nombre2" placeholder="Pon aquí tu nombre" /><br><br>
+        Domicilio: <input type="text" id="domicilio2" placeholder="Pon aquí tu domicilio" /><br><br>
+        Sexo: <input type="radio" id="hombre2" />Hombre <input type="radio" id="mujer2" />Mujer<br><br>
+        Edad: <input type="number" id="edad2"/ style="width: 45px;"><br><br>
+        Curso: <select id="curso2">
+            <option>1º</option>
+            <option>2º</option>
+        </select><br><br>
+        Módulos en los que se matricula:<br>
+        <input type="checkbox" id="ENT2" />Entornos de Desarrollo<br>
+        <input type="checkbox" id="BBDD2" />Bases de Datos<br>
+        <input type="checkbox" id="PRGR2" />Programación<br>
+        <input type="checkbox" id="ISO2" />Implantación de Sistemas Operativos<br>
+        <input type="checkbox" id="FOL2" />Formación y Orientación Laboral<br>
+        <input type="checkbox" id="DWC2" />Desarrollo Web en Entorno Cliente<br>
+        <input type="checkbox" id="DWS2" />Desarrollo Web en Entorno Servidor<br>
+        <input type="checkbox" id="DAW2" />Despliegue de Aplicaciones Web<br>
+        <input type="checkbox" id="DIW2" />Desarrollo de Interfaces Web<br>
+        <input type="checkbox" id="EIE2" />Empresa e Iniciativa Emprendedora<br>
+        Observaciones:<br>
+        <textarea cols="50" rows="10" id="observaciones2"
+            placeholder="Indique si tiene alguna observación"></textarea><br><br>
+        <input type="button" value="Enviar" id="enviar2" /><input type="button" value="Restablecer" id="restablecer2" />
+    </form>
     <script src="Ejercicio12.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
 </body>
+
 </html>
